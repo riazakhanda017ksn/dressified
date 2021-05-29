@@ -1,0 +1,49 @@
+.background-one{
+    background: url(../../containers/Images/photo-1480455624313-e29b44bbfde1.jpg)no-repeat fixed top center;
+    position: relative;
+    background-size: fixed;
+    background-size: cover;
+    height:100vh;
+    object-fit: cover;
+}
+.background-one::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685);}
+    
+.background-two{
+    background: url(../../containers/Images/tyler-nix-594384-unsplash-2000x1225.jpg)no-repeat fixed top center;
+    position: relative;
+    background-size: fixed;
+    background-size: cover;
+    height:100vh;
+}
+.background-two::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685);}
+.background-three{
+    background: url(../../containers/Images/22323232.jpg)no-repeat fixed ;
+    position: relative;
+    background-size: fixed;
+    background-size: cover;
+    height:100vh;
+    background-position: center 16%;
+}
+.background-three::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685);}
+    
