@@ -237,16 +237,18 @@ span.mr-4 h2 {
                 .header {
                     font-size: 11px!important;
                 }
-                .customize {
-                    width: 100%;
-                  
-                }
+                
                 .ui.grid.container {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
-                
+               
+                .customize {
+                    width: 100%!important;
+                    justify-content: center!important;
+                    display: flex!important;
+                }
             
             }
 
@@ -255,3 +257,10 @@ span.mr-4 h2 {
      transition: 2s;
     
  }
+ .ui.grid.container {
+    margin-top: 3px;
+}
+ .ui.placeholder.segment.margin-top {
+    margin-top: 50px!important;
+    margin-bottom: 10px;
+}
