@@ -6,6 +6,7 @@ import Header from './Header/Header';
 
 
 const Headers = () => {
+  
     return (<div>
         <div>
       <Header></Header>
@@ -57,7 +58,7 @@ const Headers = () => {
                        <h1>NEW ARRIVALS</h1>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos quidem minima! Nihil dolor alias voluptatum ut, praesentium laudantium beatae.</p>
                        
-                       <Link to='/products'><button>SHOP NOW</button></Link>
+                       <Link to='/products'><button >SHOP NOW </button></Link>
                    </div>
                </div>
              </div>
