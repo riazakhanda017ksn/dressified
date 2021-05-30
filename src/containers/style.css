@@ -7,9 +7,7 @@
     height: 200px;
     border-radius: inherit;
 }
-.card {
-    height: 360px;
-}
+
 .header {
     font-size: 16px!important;
 }
@@ -24,10 +22,19 @@ a{text-decoration: none!important;}
 body{
     font-family:'Poppins', sans-serif;
 }
-
+.customize {
+    width: 25%;
+}
 ul.navbar-nav.navbar-customize {
     margin-left: auto;
     
+}
+.card {
+    height: 336px!important;
+}
+.header {
+    font-size: 14px!important;
+    font-weight: 700;
 }
 
 .navItem li a span {
@@ -56,9 +63,59 @@ ul.navbar-nav.navbar-customize li a {
     font-family: 'Roboto Slab', serif;
     font-size: 44px;
     padding-bottom: 24px;
-    padding-top: 70px;
+    padding-top: 45px;
 }
 
+.caption p {
+    color: #d2cccc;
+    line-height: 1.9rem;
+}
+
+
+
+.caption button {
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, red,rgb(238, 56, 24));
+    color: #fafafa;
+    padding: 15px 54px;
+    margin: 17px 0;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer!important;
+    position: relative;
+    z-index: 999;
+    transition: .3s;
+}
+.caption button:hover {
+   color: #f74f31; 
+   border-radius: 20px;
+}
+
+.caption button::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(255, 255, 255);
+    z-index: -111;
+    color: #f74f31;
+    transition: .3s;
+}
+.caption button:hover::before {
+    
+    height: 100%;
+    border-radius: 20px;
+    
+   }
+   span.carousel-control-prev-icon {
+    opacity: 0!important;
+}
+button.carousel-control-next {
+    opacity: 0!important;
+}
 .navbar-brand img {
     height: 32px;
 }
@@ -160,3 +217,41 @@ span.mr-4 h2 {
                 font-size: 19px;
                 font-family: 'Courgette', cursive;
             }
+
+            @media only screen and (max-width: 991px)  {
+                .header {
+                    font-size: 11px!important;
+                }
+                .customize {
+                    width: 51%;
+                  
+                }
+                .ui.grid.container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+            }
+            @media only screen and (max-width: 550px)  {
+                .header {
+                    font-size: 11px!important;
+                }
+                .customize {
+                    width: 100%;
+                  
+                }
+                .ui.grid.container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            
+            }
+
+ .navBg{
+     background: black;
+     transition: 2s;
+    
+ }

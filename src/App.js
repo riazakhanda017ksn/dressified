@@ -6,19 +6,22 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import ProductListing from './containers/ProductListing';
+
 import ProductDetails from './containers/ProductDetails';
 import HeaderMain from './containers/Headermain/HeaderMain';
+import ProductListing from './containers/ProductListing';
 
 function App() {
   return (
     <Router>
      <HeaderMain></HeaderMain>
      <Switch>
-       {/* <Route path="/" exact component={ProductListing}/> */}
+       <Route path="/products">
+      <ProductListing></ProductListing>
+       </Route>
        <Route path="/product/:productId" exact component={ProductDetails}/>
        
-
+       
        
      </Switch>
     </Router>
